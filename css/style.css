@@ -1,0 +1,72 @@
+/* Reset inicial */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+  --color-primario: #DAF7A6;
+  --color-secundario: #FFC300;
+  --fuente-titulos: Arial, sans-serif;
+  --fuente-texto: Verdana, sans-serif;
+}
+
+/* Fondo general */
+.container {
+  background-color: var(--color-primario);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Títulos */
+.titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  color: var(--color-secundario);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Párrafos */
+p {
+  font-family: var(--fuente-texto);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Imágenes */
+figure {
+  margin: 1rem;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  border: 5px solid var(--color-secundario);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Videos */
+video {
+  width: 300px;
+  border: 5px dashed var(--color-secundario);
+  margin: 1rem;
+}
